@@ -13,3 +13,7 @@ CSS for previewing Markdown with cxpartners article formatting
 
 - Make the CSS less crude
 - Make it all better
+- Add extra demo page with more formatting examples
+- People need the fonts too yeah? Licensing.
+- Make a custom file instead of hacking core :)
+- I clearly haven't thought this through have I?
