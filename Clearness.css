@@ -1,147 +1,562 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote {
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+    height: 100%;
+    overflow-y: scroll;
+    font-size: 62.5%;
+    line-height: 1.5;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
 }
+
 body {
-    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
-    color: #737373;
-    background-color: white;
-    margin: 10px 13px 10px 13px;
+    height: 100%
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 1.375;
+    color: #3f3f3f;
+    background: #f3f3f3;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: Kievit, Helvetica, Arial, sans-serif
 }
-table {
-	margin: 10px 0 15px 0;
-	border-collapse: collapse;
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
 }
-td,th {	
-	border: 1px solid #ddd;
-	padding: 3px 10px;
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline
 }
-th {
-	padding: 5px 10px;	
+
+audio:not([controls]) {
+    display: none;
+    height: 0
 }
 
 a {
-    color: #0069d6;
+    background-color: transparent
 }
+
+a:active,
 a:hover {
-    color: #0050a3;
-    text-decoration: none;
+    outline: 0
 }
-a img {
-    border: none;
+
+abbr[title] {
+    border-bottom: 1px dotted
 }
-p {
-    margin-bottom: 9px;
+
+dfn {
+    font-style: italic
 }
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+pre {
+    overflow: auto
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th {
+    padding: 0
+}
+img {
+    max-width: 100%;
+    height: auto
+}
+
+
+*,
+:after,
+:before {
+    -moz-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+@font-face {
+    font-family: Kievit;
+    src: url(../font/KievitWeb.eot);
+    src: url(../font/KievitWeb.eot#iefix) format("embedded-opentype"), url(../font/KievitWeb.woff) format("woff"), url(../font/KievitWeb.svg) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Kievit Bold';
+    src: url(../font/KievitWeb-Black.eot);
+    src: url(../font/KievitWeb-Black.eot#iefix) format("embedded-opentype"), url(../font/KievitWeb-Black.woff) format("woff"), url(../font/KievitWeb-Black.svg) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Kievit Italic';
+    src: url(../font/kievit-regularitalic-webfont.eot);
+    src: url(../font/kievit-regularitalic-webfont.eot#iefix) format("embedded-opentype"), url(../font/kievit-regularitalic-webfont.woff) format("woff");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: fontello;
+    src: url(../font/fontello.eot);
+    src: url(../font/fontello.eot#iefix) format("embedded-opentype"), url(../font/fontello.woff) format("woff"), url(../font/fontello.ttf) format("truetype"), url(../font/fontello.svg#fontello) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: fontello;
+        src: url(../font/fontello.svg#fontello) format("svg")
+    }
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    color: #404040;
-    line-height: 36px;
+    margin: 0 0 1rem;
+    font-weight: 400;
+    text-rendering: optimizeLegibility
 }
+
+b,
+strong {
+    font-weight: 400;
+    font-family: "Kievit Bold", Helvetica, Arial, sans-serif
+}
+
+em,
+i {
+    font-style: italic;
+    font-family: "Kievit Italic", Helvetica, Arial, sans-serif
+}
+
+ol,
+ul {
+    margin: 0 0 .6rem
+}
+
+li,
+p {
+    margin: .6rem 0
+}
+
+li:last-child,
+p:last-child {
+    margin-bottom: 0
+}
+
+p:first-child {
+    margin-top: 0
+}
+
+cite {
+    font-style: normal
+}
+
+a {
+    word-wrap: break-word
+}
+
+.alpha,
 h1 {
-    margin-bottom: 18px;
-    font-size: 30px;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-family: "Kievit Bold", Helvetica, Arial, sans-serif;
+    margin: 0 0 2.5rem;
+    letter-spacing: -1px
 }
-h2 {
-    font-size: 24px;
-}
-h3 {
-    font-size: 18px;
-}
-h4 {
-    font-size: 16px;
-}
-h5 {
-    font-size: 14px;
-}
-h6 {
-    font-size: 13px;
-}
-hr {
-    margin: 0 0 19px;
-    border: 0;
-    border-bottom: 1px solid #ccc;
-}
-blockquote {
-    padding: 13px 13px 21px 15px;
-    margin-bottom: 18px;
-    font-family:georgia,serif;
-    font-style: italic;
-}
-blockquote:before {
-    content:"\201C";
-    font-size:40px;
-    margin-left:-10px;
-    font-family:georgia,serif;
-    color:#eee;
-}
-blockquote p {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 18px;
-    margin-bottom: 0;
-    font-style: italic;
-}
-code, pre {
-    font-family: Monaco, Andale Mono, Courier New, monospace;
-}
-code {
-    background-color: #fee9cc;
-    color: rgba(0, 0, 0, 0.75);
-    padding: 1px 3px;
-    font-size: 12px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-pre {
-    display: block;
-    padding: 14px;
-    margin: 0 0 18px;
-    line-height: 16px;
-    font-size: 11px;
-    border: 1px solid #d9d9d9;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-pre code {
-    background-color: #fff;
-    color:#737373;
-    font-size: 11px;
-    padding: 0;
-}
-sup {
-    font-size: 0.83em;
-    vertical-align: super;
-    line-height: 0;
-}
-* {
-	-webkit-print-color-adjust: exact;
-}
-@media screen and (min-width: 914px) {
-    body {
-        width: 854px;
-        margin:10px auto;
+
+@media screen and (min-width:38em) {
+    .alpha,
+    h1 {
+        margin-bottom: 4rem;
+        line-height: 1;
+        font-size: 5rem
     }
 }
-@media print {
-	body,code,pre code,h1,h2,h3,h4,h5,h6 {
-		color: black;
-	}
-	table, pre {
-		page-break-inside: avoid;
-	}
+
+@media screen and (min-width:56em) {
+    .alpha,
+    h1 {
+        font-size: 6rem
+    }
 }
+
+.beta,
+h2 {
+    font-size: 3.2rem;
+    font-family: "Kievit Bold", Helvetica, Arial, sans-serif;
+    line-height: 1.125;
+    margin-bottom: 1.2rem
+}
+
+@media screen and (min-width:56em) {
+    .beta,
+    h2 {
+        font-size: 4.5rem
+    }
+}
+
+.article-list__title,
+.gamma,
+h3 {
+    font-size: 2.4rem;
+    font-family: "Kievit Bold", Helvetica, Arial, sans-serif;
+    line-height: 1.125;
+    margin-bottom: 1rem
+}
+
+.delta,
+h4 {
+    font-size: 2rem;
+    font-family: "Kievit Bold", Helvetica, Arial, sans-serif;
+    line-height: 1.125;
+    margin-bottom: 1rem
+}
+
+.landmark-title {
+    margin: 6rem 0 1.5rem
+}
+
+@media screen and (min-width:38em) {
+    .landmark-title {
+        margin-bottom: 3.5rem;
+        text-align: center
+    }
+}
+
+h5,
+h6 {
+    background-color: #ff7d01
+}
+
+.milli {
+    font-size: 1.4rem;
+    line-height: 1.375
+}
+
+@media screen and (min-width:38em) {
+    .milli {
+        font-size: 1.6rem
+    }
+}
+
+.micro {
+    font-size: 1.4rem
+}
+
+.intro,
+.media--intro {
+    font-size: 2rem;
+    line-height: 1.3333333333;
+    letter-spacing: -.5px;
+    margin-bottom: 3rem
+}
+
+@media screen and (min-width:38em) {
+    .intro,
+    .media--intro {
+        font-size: 2.2rem;
+        margin-bottom: 4rem
+    }
+}
+
+@media screen and (min-width:50em) {
+    .intro,
+    .media--intro {
+        font-size: 2.4rem
+    }
+}
+
+
+body,
+.pullquote {
+    font-size: 1.6rem;
+    line-height: 1.3333333333
+}
+
+@media screen and (min-width:38em) {
+    body,
+    .pullquote {
+        font-size: 2.1rem
+    }
+}
+
+body h2,
+.pullquote h2 {
+    font-size: 2.4rem;
+    font-family: "Kievit Bold", Helvetica, Arial, sans-serif;
+    line-height: 1.125;
+    margin-bottom: 1rem
+}
+
+@media screen and (min-width:56em) {
+    body h2,
+    .pullquote h2 {
+        font-size: 2.7rem
+    }
+}
+
+body {
+    width: 580px;
+    margin: 20px auto;
+    font-size: 2.1rem;
+}
+
+body h2:not([class]),
+body h3:not([class]),
+body h4:not([class]),
+body h5:not([class]),
+body h6:not([class]),
+.pullquote h2:not([class]),
+.pullquote h3:not([class]),
+.pullquote h4:not([class]),
+.pullquote h5:not([class]),
+.pullquote h6:not([class]) {
+    margin-top: 3rem
+}
+
+body h2:first-child,
+body h3:first-child,
+body h4:first-child,
+body h5:first-child,
+body h6:first-child,
+.pullquote h2:first-child,
+.pullquote h3:first-child,
+.pullquote h4:first-child,
+.pullquote h5:first-child,
+.pullquote h6:first-child {
+    margin-top: 0
+}
+
+body ol,
+body ul,
+.pullquote ol,
+.pullquote ul {
+    margin: 0 0 2rem
+}
+
+@media screen and (min-width:38em) {
+    body ol,
+    body ul,
+    .pullquote ol,
+    .pullquote ul {
+        margin: 0 0 3rem
+    }
+}
+
+body li,
+body p,
+.pullquote li,
+.pullquote p {
+    margin: 1.5rem 0
+}
+
+body li:last-child,
+body p:last-child,
+.pullquote li:last-child,
+.pullquote p:last-child {
+    margin-bottom: 0
+}
+
+body p:first-child,
+.pullquote p:first-child {
+    margin-top: 0
+}
+
+body h3,
+body h4,
+body h5,
+body h6,
+.pullquote h3,
+.pullquote h4,
+.pullquote h5,
+.pullquote h6 {
+    font-size: 1.6rem
+}
+
+@media screen and (min-width:38em) {
+    body h3,
+    body h4,
+    body h5,
+    body h6,
+    .pullquote h3,
+    .pullquote h4,
+    .pullquote h5,
+    .pullquote h6 {
+        font-size: 2.1rem
+    }
+}
+
+
+
+
+.knock-back {
+    color: #939393
+}
+
+a {
+    font-family: "Kievit Bold", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #2b76a7
+}
+
+a:focus,
+a:hover {
+    text-decoration: underline;
+    outline: 0
+}
+
+.quiet-link {
+    font-family: inherit;
+    color: inherit
+}
+
+ol,
+ul {
+    padding-left: 0
+}
+
+li {
+    padding-left: 3.5rem;
+    position: relative;
+    list-style-type: none
+}
+
+li:before {
+    position: absolute;
+    top: 0;
+    left: .75rem
+}
+
+li li {
+    padding-left: 3rem
+}
+
+ol {
+    counter-reset: ol
+}
+
+ol>li:before {
+    counter-increment: ol;
+    content: counter(ol) "."
+}
+
+@media screen {
+    ul li:before {
+        content: '\2022'
+    }
+}
+
+hr {
+    background-color: #d6d6d7;
+    border: 0;
+    height: .4rem;
+    margin: 4rem auto
+}
+
+@media screen and (min-width:38em) {
+    hr {
+        margin: 8rem auto;
+        width: 25rem;
+        max-width: 80%
+    }
+}
+
+
+
+
+
+figure {
+    margin: 3rem 0
+}
+
+figure:last-child {
+    margin-bottom: 0
+}
+
+figcaption {
+    padding: 1.4rem 2.2rem;
+    font-size: 1.6rem;
+    background: #fff
+}
+
+
+
