@@ -19,7 +19,7 @@ Plus either:
 
 ## How to use
 
-- Download and install [Mou](http://25.io/mou/), a small and lovely Markdown editor for Mac. (The 0.8.7 beta is free.)
+- Download [Mou](http://25.io/mou/), a small and lovely Markdown editor for Mac. (The 0.8.7 beta is free.) No big installation dramas required, just put it in your Applications folder and fire it up.
 - On a Mac, pop the `cx-markdown.css` file in this repo into Library > Application Support > Mou > CSS directory. 
   - (To access your Library folder open the Go menu in Finder and select the `alt` key)
   - On a PC, all the very best with that.
