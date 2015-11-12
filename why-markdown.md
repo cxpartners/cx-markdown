@@ -53,4 +53,4 @@ That sounds alright doesn't it? Here's more:
 
 It is becoming increasingly ubiquitous – which means there's plenty of [documentation](https://daringfireball.net/projects/markdown/syntax) out there and open source tools like [Mou](http://25.io/mou/) that help you to get to grips with its simple, charming pleasures. 
 
-There are lots of people who will help too if you just ask. Follow the [simple steps here](/README) to it a try.
+There are lots of people who will help too if you just ask. Follow the [simple steps here](/README.md) to it a try.
