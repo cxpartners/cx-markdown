@@ -20,7 +20,7 @@ Plus either:
 ## How to use
 
 - Download and install [Mou](http://25.io/mou/), a small and lovely Markdown editor for Mac. (The 0.8.7 beta is free.)
-- On a Mac, pop the `cx-markdown.css` file into Library > Application Support > Mou > CSS directory. On a PC, all the very best with that.
+- On a Mac, pop the `cx-markdown.css` file in this repo into Library > Application Support > Mou > CSS directory. On a PC, all the very best with that.
 - Launch Mou and open Preferences > CSS and select cx-markdown.css
 - Write content with Markdown and watch it get automagically styled with something very close to the latest CSS for blog posts on the cxpartners website
 - Write insightful stuff y'hear?
