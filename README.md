@@ -29,14 +29,13 @@ Plus either:
 - Write content with Markdown and watch it get automagically styled with something very close to the latest CSS for blog posts on the cxpartners website
 - Write insightful stuff y'hear?
 - Or just mess about, get a feel for Markdown, see how fun it is, wean yourself off that WYSIWYG habit
-- Try hacking the `creating_the_cxpartners_design_manual.md` example around if you're not sure where to start
+- Try hacking the [formatting demo](examples.md) or the [example blog post](creating_the_cxpartners_design_manual.md) example around if you're not sure where to start
 
 ## Roadmap
 
 - See if we can make the preview more realistic
   - Bundle blockquote styles
 - Figure out how to generate the CSS without error-prone manual interventions
-- Create extra demo page with more exhaustive formatting examples
 - Where do images come from?
 - I clearly haven't thought this through have I?
 - Make it all better
