@@ -35,6 +35,7 @@ Plus either:
 
 - See if we can make the preview more realistic
   - Bundle blockquote styles
+- Check out other Markdown editors (for iOS?)
 - Figure out how to generate the CSS without error-prone manual interventions
 - Where do images come from?
 - I clearly haven't thought this through have I?
