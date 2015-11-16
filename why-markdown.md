@@ -58,6 +58,6 @@ That sounds alright doesn't it? Here's more:
 
 > Markdown is intended to be as easy-to-read and easy-to-write as is feasible. Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. 
 
-It is becoming increasingly ubiquitous – which means there's plenty of [documentation](https://daringfireball.net/projects/markdown/syntax) out there and open source tools like [Mou](http://25.io/mou/) that help you to get to grips with its simple, charming pleasures. 
+It is becoming increasingly ubiquitous – which means there's plenty of [documentation](https://daringfireball.net/projects/markdown/syntax) out there and open source tools like [Mou](http://25.io/mou/), the extraordinary goodness of [StackEdit](https://stackedit.io/editor) and [78 others](http://mashable.com/2013/06/24/markdown-tools/) that help you to get to grips with its simple, charming pleasures. 
 
 There are lots of people who will help too if you just ask. Follow the [simple steps here](/README.md) to it a try.
